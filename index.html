@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+    defer></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>JS Scoreboard</title>
+</head>
+
+<body class="body">
+  <header>
+    <div class="text-end m-2">
+      <button onclick="clickTryAgain()" class="btn btn-danger fs-3">TRY AGAIN</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="row">
+        <div class="col board">
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="text-center">
+                <p class="display-2 score text-shadow">HOME</p>
+                <p class="class display-1">0</p>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="text-center">
+                <p class="display-2 score">AWAY</p>
+                <p class="display-1">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOTE this is how you line segments up in the center of the page -->
+      <section class="row justify-content-evenly text-center mt-3">
+        <div class="col-3 m-2">
+          <!-- FIXME onclick not registering through console  -->
+          <button onclick="addScore('home, 1')" class="board fw-3 score-font btn btn-rounded btn-rounded m-2">HOME
+            +1</button>
+          <!-- NOTE addScore coming from FUNCTION add score on js DOC -->
+          <button class="board fw-3 score-font btn btn-rounded btn-rounded m-2">HOME +3</button>
+        </div>
+
+        <div class="col-3 m-2">
+          <button class="board fw-3 score-font btn btn-rounded m-2">AWAY +1</button>
+          <button class="board fw-3 score-font btn btn-rounded m-2">AWAY+3</button>
+        </div>
+      </section>
+      <!-- NOTE section END, ALL IN ONE SECTION PLS -->
+
+
+
+      <!-- NOTE just a test! pls disregard! -->
+      <!-- <section id="input-display" class="text-light"> -->
+      <!-- HI! -->
+      <!-- </section> -->
+      <!-- <section class="row"> -->
+      <!-- <img src="" alt=""> -->
+      <!-- </section> -->
+
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
